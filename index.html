@@ -21,39 +21,44 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             max-width: 90%;
-            display: flex; /* Mengatur elemen di dalam container menjadi baris */
-            align-items: center; /* Menyelaraskan elemen secara vertikal */
+            display: flex;
+            align-items: center;
         }
         .image-container {
             position: relative;
-            flex-shrink: 0; /* Agar gambar tidak mengecil */
+            flex-shrink: 0;
         }
         .image-container img {
-            max-width: 300px; /* Batas lebar maksimum gambar */
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
-            margin-top: 40px; /* Memberikan jarak di atas gambar */
+            margin-top: 40px;
         }
         .image-container h1 {
             font-size: 1.5rem;
             margin: 0;
             color: white;
-            position: absolute; /* Menempatkan teks di atas gambar */
-            top: -20px; /* Menggeser teks lebih ke atas */
-            left: 50%; /* Posisi horizontal di tengah gambar */
+            position: absolute;
+            top: -20px;
+            left: 50%;
             transform: translateX(-50%);
-            white-space: nowrap; /* Memastikan teks tidak terpisah menjadi dua baris */
-            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            white-space: nowrap;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 5px 10px;
             border-radius: 5px;
         }
         .text-container {
-            margin-left: 20px; /* Memberi jarak antara gambar dan teks */
+            margin-left: 20px;
+            text-align: center; /* Membuat teks center */
         }
         .text-container p {
             font-size: 1rem;
             color: #555;
             margin: 0;
+        }
+        .text-container p:last-child {
+            font-size: 1.2rem; /* Membuat teks terakhir lebih besar */
+            font-weight: bold; /* Menambahkan kesan tebal untuk teks */
         }
     </style>
 </head>
